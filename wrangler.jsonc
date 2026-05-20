@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "espaiblanc",
+  "name": "espaienblanc",
   "compatibility_date": "2026-05-20",
   "assets": {
     "directory": "./public",
