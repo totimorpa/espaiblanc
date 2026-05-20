@@ -1,4 +1,4 @@
-# espaienblanc
+# espaiblanc
 
 Minimal static landing page for Cloudflare.
 
