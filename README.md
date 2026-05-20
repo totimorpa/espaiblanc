@@ -1,6 +1,6 @@
 # espaienblanc
 
-Minimal static landing page for Cloudflare Pages.
+Minimal static landing page for Cloudflare.
 
 ## Local preview
 
@@ -12,6 +12,14 @@ python3 -m http.server 4173
 
 Then open http://127.0.0.1:4173
 
-## Deploy
+## Deploy on Cloudflare
 
-This repo is intended to be connected to Cloudflare Pages for automatic deployments from GitHub.
+This repo is configured for Cloudflare's Git-connected static deployment flow using Wrangler static assets.
+
+When connecting the repository in Cloudflare:
+
+- framework preset: none
+- build command: leave the default Cloudflare command if it is auto-filled
+- production branch: `main`
+
+Cloudflare will serve the static files from this repository root via `wrangler.jsonc`.
