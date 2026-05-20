@@ -14,7 +14,7 @@ Then open http://127.0.0.1:4173
 
 ## Deploy on Cloudflare
 
-This repo is configured for Cloudflare's Git-connected static deployment flow using Wrangler static assets.
+This repo is configured for Cloudflare's Git-connected static deployment flow using Wrangler static assets on the `espaiblanc` Worker.
 
 When connecting the repository in Cloudflare:
 
