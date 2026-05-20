@@ -22,4 +22,4 @@ When connecting the repository in Cloudflare:
 - build command: leave the default Cloudflare command if it is auto-filled
 - production branch: `main`
 
-Cloudflare will serve the static files from this repository root via `wrangler.jsonc`.
+Cloudflare will serve the static files from `public/` via `wrangler.jsonc`.
