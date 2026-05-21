@@ -14,12 +14,11 @@ Then open http://127.0.0.1:4173
 
 ## Deploy on Cloudflare
 
-This repo is configured for Cloudflare's Git-connected static deployment flow using Wrangler static assets on the `espaiblanc` Worker.
+This repo is configured for Cloudflare Workers with static assets.
 
-When connecting the repository in Cloudflare:
+It serves the site from `public/` and uses a small Worker to:
 
-- framework preset: none
-- build command: leave the default Cloudflare command if it is auto-filled
-- production branch: `main`
+- redirect `http` to `https`
+- redirect `www.espaiblanc.com` to `espaiblanc.com`
 
-Cloudflare will serve the static files from `public/` via `wrangler.jsonc`.
+The active Worker name is `espaiblanc`.
